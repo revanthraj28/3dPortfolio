@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
     setCurrentAnimation("hit");
-    console.log(import.meta.env.VITE_APP_EMAILJS_SERVIES_ID)
+    console.log(import.meta.env.VITE_APP_EMAILJS_SERVIES_ID);
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVIES_ID,
