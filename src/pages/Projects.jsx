@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../constants";
+import { projects, socialLinks } from "../constants";
 import { Link } from "react-router-dom";
 import CTA from "../components/CTA";
 
@@ -44,6 +44,39 @@ const Projects = () => {
                 <div className="mt-5 flex items-center gap-2 font-poppins">
                   <Link 
                   to={project.link}
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-600"
+                  >
+                    Live Link
+                  </Link>
+                  <img
+                  src="arrow"
+                  className="w-4 h-4 object-contain"
+                  />
+                </div>  
+            </div>  
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-wrap my-20 gap-16">
+        {socialLinks.map((social)=>(
+          <div className="lg:w-[400px] w-full" key={social.name}>
+            <div className="block-container w-12 h-12">
+              <div className="btn-front rounded-xl flex justify-center items-center">
+                <img
+                  src={social.iconUrl}
+                  alt="Project Icon"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            </div>
+            <div className="mt-5 flex flex-col">
+                <h4 className="text-2xl font-poppins font-semibold">
+                  {social.name}
+                </h4>
+                <div className="mt-5 flex items-center gap-2 font-poppins">
+                  <Link 
+                  to={social.link}
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600"
                   >

@@ -28,6 +28,7 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import swift from './swift.svg'
 import java from './java.png'
+import instagram from './instagram.png'
 
 export {
     css,
@@ -59,5 +60,6 @@ export {
     soundon,
     soundoff,
     swift,
-    java
+    java,
+    instagram
 }

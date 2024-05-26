@@ -25,7 +25,8 @@ import {
     threads,
     typescript,
     swift,
-    java
+    java,
+    instagram
 } from "../assets/icons";
 
 export const skills = [
@@ -173,6 +174,11 @@ export const socialLinks = [
         name: 'LinkedIn',
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/revanth-raj-66b864224/',
+    },
+    {
+        name: 'Instgram',
+        iconUrl: instagram,
+        link: 'https://www.instagram.com/_revanth_raj/',
     }
 ];
 
