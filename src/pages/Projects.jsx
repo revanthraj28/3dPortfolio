@@ -1,6 +1,7 @@
 import React from "react";
 import { projects, socialLinks } from "../constants";
 import CTA from "../components/CTA";
+import SkyModel from "../models/Skymodel";
 
 const Projects = () => {
   return (
